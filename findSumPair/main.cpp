@@ -8,7 +8,7 @@ void findSumPair(int* arr, int* ppair, int sum, int n){      // arr = given arr,
   
       desNum = sum - arr[p1];
       
-      for(int p2 = 1; p2 < n; p2++){
+      for(int p2 = p1 + 1; p2 < n; p2++){
         if(arr[p2] == desNum){
           *ppair = p1;
           *(ppair + 1) = p2;
